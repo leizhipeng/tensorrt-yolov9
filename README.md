@@ -57,13 +57,13 @@ export PATH=/home/zhipeng/tensorrt/TensorRT-8.6.1.6/bin${PATH:+:${PATH}}
 
 * Model converting
 ```
-python python/export/yolov9/export.py -w yolov9-c-converted.pt -o output -b 8 --img 640 -s
+python TensorRT-YOLO/python/export/yolov9/export.py -w yolov9-c-converted.pt -o output -b 8 --img 640 -s
 trtexec --onnx=yolov9-c-converted.onnx --saveEngine=yolov9-c-converted.engine --fp16
 ```
 
 * Inference
 ```
-python detect.py -e yolov9-c-converted.engine -o output -i horses.jpg
+python TensorRT-YOLO/detect.py -e yolov9-c-converted.engine -o output -i horses.jpg -l TensorRT-YOLO/labels.txt
 ```
 
 
