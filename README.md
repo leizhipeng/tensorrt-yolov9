@@ -63,7 +63,7 @@ trtexec --onnx=yolov9-c-converted.onnx --saveEngine=yolov9-c-converted.engine --
 
 * Inference
 ```
-python TensorRT-YOLO/detect.py -e yolov9-c-converted.engine -o output -i horses.jpg -l TensorRT-YOLO/labels.txt
+python detect.py -e yolov9-c-converted.engine -o output -i horses.jpg -l labels.txt
 ```
 
 

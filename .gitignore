@@ -164,3 +164,6 @@ output/*
 *pt
 *onnx
 *engine
+tmp/
+yolov9/
+weights/*
