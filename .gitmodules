@@ -1,3 +1,0 @@
-[submodule "TensorRT-YOLO"]
-	path = TensorRT-YOLO
-	url = https://github.com/laugh12321/TensorRT-YOLO.git
